@@ -1,0 +1,87 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+.env
+# Keep the template, not the real secrets
+!.env.example
+
+# ============================================================
+# Large ML Model Artifacts
+# ============================================================
+# Exclude heavy binary weights & optimizer states from VCS
+# (Use Git LFS or Hugging Face Hub to store these)
+models/sentiment_model/model.safetensors
+models/sentiment_model/tokenizer.json
+models/sentiment_model/vocab.txt
+models/sentiment_model/training_args.bin
+models/sentiment_model/checkpoints/
+
+# ============================================================
+# Large / Generated Data Files
+# ============================================================
+# Raw & preprocessed splits (regeneratable from notebooks)
+data/*.csv
+data/*.parquet
+data/*.json
+data/*.jsonl
+# Keep placeholder so the folder is tracked
+!data/.gitkeep
+
+# ============================================================
+# Jupyter Notebooks – Outputs & Checkpoints
+# ============================================================
+notebooks/.ipynb_checkpoints/
+notebooks/untitled.txt
+# Strip cell outputs before committing (keep source cells)
+# Tip: use `nbstripout` pre-commit hook
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Testing & Coverage
+# ============================================================
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ============================================================
+# Logging & Temp
+# ============================================================
+*.log
+logs/
+tmp/
+temp/
+
+# ============================================================
+# Secrets (belt-and-suspenders)
+# ============================================================
+*.pem
+*.key
+secrets/

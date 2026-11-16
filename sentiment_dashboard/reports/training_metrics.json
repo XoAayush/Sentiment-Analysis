@@ -1,0 +1,26 @@
+{
+  "val_results": {
+    "eval_loss": 0.0025162105448544025,
+    "eval_accuracy": 1.0,
+    "eval_f1": 1.0,
+    "eval_f1_weighted": 1.0,
+    "eval_runtime": 39.9478,
+    "eval_samples_per_second": 18.774,
+    "eval_steps_per_second": 0.601,
+    "epoch": 3.0
+  },
+  "test_results": {
+    "eval_loss": 0.002519905334338546,
+    "eval_accuracy": 1.0,
+    "eval_f1": 1.0,
+    "eval_f1_weighted": 1.0,
+    "eval_runtime": 39.9299,
+    "eval_samples_per_second": 18.783,
+    "eval_steps_per_second": 0.601,
+    "epoch": 3.0
+  },
+  "training_time_minutes": 30.359868021806083,
+  "num_epochs": 4,
+  "batch_size": 16,
+  "learning_rate": 2e-05
+}
